@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+a {
+	text-decoration: none;
+	color: #575757;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: #8d8d8d;
+}
+
+.container {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.page-content {
+	width: 100%;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    padding: 1%;
+    background-image: linear-gradient(#489cebd5, #88a4ce), url(/Users/elizabethseto/Desktop/images/blueflowers.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: initial;
+}
+
+nav img{
+    
+    width: 100px;
+}
+
+.navigation-links{
+    flex: 1;
+    text-align: right;
+}
+
+
+.navigation-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navigation-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+.front-page{
+    width: 90%;
+    color:#ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.front-page h1{
+    font-size: 75px;
+}
+
+.front-page p{
+    margin: 10px 0 50px;
+    font-size: 14px;
+    color:#ffffff;
+}
+
+.aboutme{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+p{
+    color:black;
+    font-size: 20px;
+    font-weight: 300px;
+    line-height: 25px;
+    padding: 10px;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .front-page h1{
+        font-size: 20px;
+    }
+    .igation ul li{
+        display: block;
+    }
+    .navigation-links{
+        position: absolute;
+        background: #181818;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color:rgb(0, 0, 0);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    navigation-links .fa{
+        padding: 30px;
+    }
+}
+
+#aboutme-img {
+	height: 450px;
+	border-radius: 4px;
+	border-top: 20px solid #e5e5e5;
+	overflow-y:hidden;
+	margin: 40px;
+	margin-top: 20px;
+}
+
+#img-console {
+	width: 100%;
+}
+
+
+#console {
+	margin: 40px;
+	margin-top: 20px;
+	padding: 30px;
+	overflow-y:auto;
+	line-height: 22px;
+	height: 500px;
+	width: 550px;
+	font-size: 90%;
+    text-align: left;
+	border-top: 20px solid #e5e5e5;
+	border-radius: 4px;
+	background-color: #272626;
+}
+
+ul{ 
+	margin: 0; 
+	padding-left: 50px; 
+}
+
+.color-one {
+	color: #d8aeeb;
+}
+.color-two {
+	color: #e0e0e0;
+}
+
+.color-three {
+	color: #86a3cc;
+}
+
+.color-four {
+	color: #eed8ab;
+}
+
+.color-five {
+	color: #d9dfaa;
+}
+
+.my-education{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(#89bef0d5, #638cc9);
+    text-align: left;
+    height: 500px;
+	border-radius: 4px;
+	border-top: 20px solid #e5e5e5;
+	overflow-y:hidden;
+	margin: auto;
+	margin-top: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    line-height: 22px;
+}
+
+   .my-experience{
+    height: 500px;
+    width: 80%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 4px;
+    box-shadow: 12px 12px 1px #ddd8f0;
+    overflow-y:hidden;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+    min-height: 130vh;
+    width: 100%;
+    background-image: #fff;
+    background-position: center;
+    position: relative;
+    
+} 
+
+
+.experience{
+    border-top: 20px solid #e5e5e5;
+	border-radius: 4px;
+    flex-basis: 100%;
+    background-image: linear-gradient(#35699bd5, #638cc9);
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px 7px;
+    box-sizing: border-box;
+    height: 800px;
+    justify-content: space-between;
+    text-align: left; 
+	padding: 30px;
+	font-size: 90%;
+}
+
+
+
+
